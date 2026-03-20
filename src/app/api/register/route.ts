@@ -59,8 +59,18 @@ export async function POST(req: Request) {
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ success: true, message: "Registration successful" });
-  } catch (error) {
-    console.error("Nodemailer Error:", error);
-    return NextResponse.json({ success: false, message: "Failed to send email" }, { status: 500 });
+  } catch (error: any) {
+    console.error("Nodemailer Error Details:", {
+      message: error.message,
+      code: error.code,
+      command: error.command,
+      response: error.response,
+      stack: error.stack
+    });
+    return NextResponse.json({ 
+      success: false, 
+      message: "Failed to send email. Please check server logs for details.",
+      error: error.message 
+    }, { status: 500 });
   }
 }
