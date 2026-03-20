@@ -32,7 +32,7 @@ export const CTASection = () => {
               </div>
               <div>
                 <p className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">Email Us</p>
-                <p className="font-bold text-slate-900 dark:text-white">hello@neurodev.in</p>
+                <p className="font-bold text-slate-900 dark:text-white">Loading....</p>
               </div>
             </div>
             
@@ -42,7 +42,7 @@ export const CTASection = () => {
               </div>
               <div>
                 <p className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">Connect</p>
-                <p className="font-bold text-slate-900 dark:text-white">linkedin.com/company/neurodev</p>
+                <p className="font-bold text-slate-900 dark:text-white">Loading....</p>
               </div>
             </div>
           </div>
