@@ -83,7 +83,7 @@ export default function Home() {
             </div>
 
             <p className="mt-4 text-sm text-slate-500 dark:text-slate-500 font-medium">
-              Join 500+ developers already on the waitlist.
+              Join 10+ developers already on the waitlist.
             </p>
           </motion.div>
         </HeroHighlight>
